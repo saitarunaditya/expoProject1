@@ -10,8 +10,11 @@ export default function Home() {
       <Text style={styles.text}>"Welcome Back {user?.email}🤩"</Text>
       <Image
         style={styles.image}
-        source={require("/Users/saitarunaditya/Desktop/StickerSmash/assets/images/eye.png")}
+        source={{
+          uri: "https://download01.xencelabs.com/Uploads/images/xencelabs/seo/20240419/4.jpg",
+        }}
       />
+
       <View style={styles.buttonContainer}>
         <Link href="/(tabs)/navigation" style={styles.button}>
           Navigation
