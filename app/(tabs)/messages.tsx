@@ -8,6 +8,7 @@ import {
   ScrollView,
 } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
+import { VoiceButton } from "../(voice)/voiceButton";
 
 const AIChatbot = () => {
   const [text, setText] = useState("");
@@ -47,6 +48,12 @@ const AIChatbot = () => {
             </View>
           ))}
         </ScrollView>
+
+        {/* Voice Button above the input box */}
+        <View style={styles.voiceButtonContainer}>
+          <VoiceButton />
+        </View>
+
         <View style={styles.inputContainer}>
           <TextInput
             style={styles.input}
@@ -99,6 +106,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 10,
     marginRight: 10,
+  },
+  voiceButtonContainer: {
+    alignItems: "center",
+    marginBottom: 5, // Space between button and input
   },
 });
 

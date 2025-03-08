@@ -2,6 +2,7 @@ import { Text, View, StyleSheet, Button, TouchableOpacity } from "react-native";
 import { Link } from "expo-router";
 import auth from "@react-native-firebase/auth";
 import { Image } from "expo-image";
+import { VoiceButton } from "../(voice)/voiceButton";
 
 export default function Home() {
   const user = auth().currentUser;
@@ -33,6 +34,7 @@ export default function Home() {
           <Text style={styles.text2}>Sign Out</Text>
         </TouchableOpacity>
       </View>
+      <VoiceButton />
     </View>
   );
 }

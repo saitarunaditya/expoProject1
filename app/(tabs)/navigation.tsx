@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, StyleSheet, TouchableOpacity, Text } from "react-native";
 import MapView, { Marker, Region } from "react-native-maps";
+import { VoiceButton } from "../(voice)/voiceButton";
 
 const MapScreen: React.FC = () => {
   const [region, setRegion] = useState<Region>({
@@ -53,6 +54,7 @@ const MapScreen: React.FC = () => {
           <Text style={styles.zoomText}>-</Text>
         </TouchableOpacity>
       </View>
+      <VoiceButton />
     </View>
   );
 };

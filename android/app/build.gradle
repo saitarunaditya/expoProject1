@@ -173,6 +173,8 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+    implementation "androidx.compose.ui:ui:1.5.0"
+    implementation "androidx.compose.compiler:compiler:1.5.0"
 }
 
 apply plugin: 'com.google.gms.google-services'
